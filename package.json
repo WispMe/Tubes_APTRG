@@ -1,0 +1,30 @@
+{
+  "name": "belajarnodejs1",
+  "version": "1.0.0",
+  "description": "simple serial port",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faizfak/BelajarNodeJS.git"
+  },
+  "keywords": [
+    "aptrg"
+  ],
+  "author": "Faiz Adil Khatami",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faizfak/BelajarNodeJS/issues"
+  },
+  "homepage": "https://github.com/faizfak/BelajarNodeJS#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "npm": "^5.7.1",
+    "port": "^0.8.1",
+    "serial": "0.0.9",
+    "serialport": "^6.1.1",
+    "socket.io": "^2.1.0"
+  }
+}

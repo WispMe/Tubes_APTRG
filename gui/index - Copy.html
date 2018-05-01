@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ground Control Station</title>
+    <link rel="icon" type="image/png" href="vendor/image/163177aptrg1.png">
+    <link href="https://bootswatch.com/4/solar/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body onload="update()">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">APTRG</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <!<li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+        </div-->
+        <!--div>
+            <img src="vendor/image/163177aptrg1.png" alt="APTRG" style="width:70px;height:50px;">
+        </div-->
+    </nav>
+    <div>
+        <table border="5">
+            <tr>
+                <td>
+                    <div id="receiveData"></div>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-3 ">
+                <div class="card text-white bg-primary mb-3" style="width:100px;height:110px;float:left;margin-right:1%;margin-left:1%;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 id="Header">data</h5>
+                    </div>
+                </div>
+                <div class="card text-white bg-primary mb-3" style="width:100px;height:110px;float:left;">
+                    <div class="card-header">Alti</div>
+                    <div class="card-body">
+                        <h5 id="Alti">data</h5>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="card text-white bg-primary mb-3" style="width:100px;height:110px;float:left;margin-right:1%;margin-left:1%;">
+                    <div class="card-header">Temp</div>
+                    <div class="card-body">
+                        <h5 id="Temp">data</h5>
+                    </div>
+                </div>
+                <div class="card text-white bg-primary mb-3" style="width:100px;height:110px;float:left;">
+                    <div class="card-header">Pressure</div>
+                    <div class="card-body">
+                        <h5 id="Pressure">data</h5>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="card text-white bg-primary mb-3" style="width:100px;height:110px;float:left;margin-right:1%;margin-left:1%;">
+                    <div class="card-header">Humid</div>
+                    <div class="card-body">
+                        <h5 id="Humid">data</h5>
+                    </div>
+                </div>
+                <div class="card text-white bg-primary mb-3" style="width:100px;height:110px;float:left;">
+                    <div class="card-header">CO2</div>
+                    <div class="card-body">
+                        <h5 id="CO2">data</h5>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 0px; height: 395px; border: 1px #000 solid;border-color: yellow;">
+            </div>
+            <div class="col-md-4" style="width:100%; height:325px;">
+                <table class="table table-hover">
+                    <tr class="table-active text-info">
+                        <th scope="row">Lat:</th>
+                        <td id="Latitude">data</td>
+                        <th scope="row">Long:</th>
+                        <td id="Longitude">data</td>
+                    </tr>
+                </table>
+                <div id="coordinate" style=" margin-top:5% ; width:100%; height:325px;"> </div>
+            </div>
+            <div class="col-md-4">
+                <h4 align="center" class="text-info">Grafik Tekanan</h4>
+                <div id="grafiktekanan" style="width: 400px; height: 325px;margin-top:9.8%"></div>
+            </div>
+            <div>   
+                <canvas id="gaugeArahAngin"> </canvas>
+            </div>
+        </div>
+</body>
+<!--script src="vendor/bootstrap-3.3.7-dist/js/bootstrap.js"></script-->
+<script src="vendor/Highcharts-6.0.7/code/highcharts.js"></script>
+<script src="vendor/jquery/jquery-3.3.1.min.js"></script>
+<!-- GOogle Maps -->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script src="/socket.io/socket.io.js"></script>
+<!-- Import socket io -->
+<script src="app/data.js"></script>
+<!-- import data js -->
+
+<script src="vendor/gauge/gauge.min.js">    </script>
+
+
+
+</html>

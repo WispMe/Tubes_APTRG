@@ -1,0 +1,38 @@
+.container-gauge
+{
+    
+    overflow: hidden;
+    width: 300px;
+}
+
+.svg
+{        
+    float: left;        
+}
+
+#satu .svg
+{          
+    height: 0;
+    
+                    
+
+}
+
+#dua .svg
+{
+    height: 0;
+    margin-top: 8px;
+}
+
+.quad
+{
+    height:0;
+    padding-bottom: 33.33%;
+    width:33%;
+    
+}
+
+
+
+
+
